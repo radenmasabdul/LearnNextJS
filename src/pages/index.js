@@ -1,7 +1,16 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 
 export default function Home() {
+
+  const router = useRouter();
+
+  const handleClick = () => {
+    console.log('Placing Your Order');
+    router.push('/product')
+  }
+
   return (
     <>
       <Head>
@@ -21,6 +30,11 @@ export default function Home() {
         <Link href="/docs">
           Docs
         </Link>
+        <button
+          onClick={handleClick}
+          className="btn btn-primary">
+          Place Order
+        </button>
       </main>
     </>
   )
