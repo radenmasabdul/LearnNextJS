@@ -1,4 +1,5 @@
 import { useRouter } from "next/router"
+import Link from "next/link";
 
 const Doc = () => {
     const router = useRouter();
@@ -22,6 +23,7 @@ const Doc = () => {
             <h1 className="text-red-700 text-4xl">
                 Documents Home Page
             </h1>
+            <Link href="/">Back to Home</Link>
         </>
     )
 }

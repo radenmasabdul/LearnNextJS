@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -11,6 +12,15 @@ export default function Home() {
       </Head>
       <main>
         <h1 className='text-red-700 text-4xl'>Hello Next JS</h1>
+        <Link href="/blogs">
+          Blog
+        </Link>
+        <Link href="/product">
+          Products
+        </Link>
+        <Link href="/docs">
+          Docs
+        </Link>
       </main>
     </>
   )
