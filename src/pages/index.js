@@ -1,5 +1,5 @@
 import Head from 'next/head'
-// import Link from 'next/link'
+import Link from 'next/link'
 // import { useRouter } from 'next/router';
 
 export default function Home() {
@@ -21,7 +21,11 @@ export default function Home() {
       </Head>
       <main>
         <h1 className='text-red-700 text-4xl'>Hello Next JS</h1>
-        
+
+        <Link href="/users">
+          Users
+        </Link>
+
         {/* router */}
         {/* <Link href="/blogs">
           Blog
