@@ -1,15 +1,15 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import { useRouter } from 'next/router';
+// import Link from 'next/link'
+// import { useRouter } from 'next/router';
 
 export default function Home() {
 
-  const router = useRouter();
+  // const router = useRouter();
 
-  const handleClick = () => {
-    console.log('Placing Your Order');
-    router.push('/product')
-  }
+  // const handleClick = () => {
+  //   console.log('Placing Your Order');
+  //   router.push('/product')
+  // }
 
   return (
     <>
@@ -21,7 +21,9 @@ export default function Home() {
       </Head>
       <main>
         <h1 className='text-red-700 text-4xl'>Hello Next JS</h1>
-        <Link href="/blogs">
+        
+        {/* router */}
+        {/* <Link href="/blogs">
           Blog
         </Link>
         <Link href="/product">
@@ -34,7 +36,7 @@ export default function Home() {
           onClick={handleClick}
           className="btn btn-primary">
           Place Order
-        </button>
+        </button> */}
       </main>
     </>
   )
