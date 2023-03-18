@@ -22,9 +22,13 @@ export default function Home() {
       <main>
         <h1 className='text-red-700 text-4xl'>Hello Next JS</h1>
 
-        <Link href="/users">
-          Users
+        <Link href="/posts">
+          Post
         </Link>
+
+        {/* <Link href="/users">
+          Users
+        </Link> */}
 
         {/* router */}
         {/* <Link href="/blogs">
