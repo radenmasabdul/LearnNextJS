@@ -15,7 +15,7 @@ const Post = ({ post }) => {
 
 export default Post
 
-//static path parameters
+//static paths parameters
 export async function getStaticPaths() {
     return {
         paths: [
