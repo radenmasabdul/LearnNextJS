@@ -17,7 +17,8 @@ const UsersList = ({ users }) => {
 
 export default UsersList;
 
-//get static props
+//static generation with get static props (run only on the server side)
+//get static props hanya diperbolehkan di halaman dan tidak dapat dapat dijalankan dari komponen biasa 
 export async function getStaticProps() {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = await response.json();
