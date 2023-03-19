@@ -22,8 +22,26 @@ const ArticleListByCategory = ({ articles, category }) => {
 export default ArticleListByCategory
 
 //SSR with Dynamic Parameters
+// export async function getServerSideProps(context) {
+//     const { params } = context;
+//     const { category } = params;
+//     const response = await fetch(`http://localhost:4000/news?category=${category}`);
+//     const data = await response.json();
+
+//     return {
+//         props: {
+//             articles: data,
+//             category,
+//         }
+//     }
+// }
+
+//SSR with getServerSideProps context
 export async function getServerSideProps(context) {
-    const { params } = context;
+    const { params, req, res, query } = context;
+    console.log(query);
+    console.log(req.headers.cookie)
+    res.setHeader('Set-Cookie', ['name=Vishwas'])
     const { category } = params;
     const response = await fetch(`http://localhost:4000/news?category=${category}`);
     const data = await response.json();
