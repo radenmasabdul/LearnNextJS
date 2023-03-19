@@ -17,6 +17,18 @@
             "title" : "News Article 3",
             "description" : "Description 3",
             "category" : "hobby"
+        },
+        {
+            "id" : 4,
+            "title" : "News Article 4",
+            "description" : "Description 4",
+            "category" : "sports"
+        },
+        {
+            "id" : 5,
+            "title" : "News Article 5",
+            "description" : "Description 5",
+            "category" : "hobby"
         }
     ]
 }
