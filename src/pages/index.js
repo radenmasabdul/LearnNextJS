@@ -26,6 +26,10 @@ export default function Home() {
           Post
         </Link>
 
+        <Link href="/news">
+          News
+        </Link>
+
         {/* <Link href="/users">
           Users
         </Link> */}
