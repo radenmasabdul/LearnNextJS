@@ -37,7 +37,10 @@ export default PostList;
 
 //static generation with get static props
 export async function getStaticProps() {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  //env
+  const url = process.env.NEXT_PUBLIC_API_URL;
+  console.log(process.env.NEXT_PUBLIC_API_URL);
+  const response = await fetch(`${url}/posts`);
   const data = await response.json();
 
   return {
