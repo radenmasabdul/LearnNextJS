@@ -1,3 +1,6 @@
+import Image from "next/image";
+import user from "../../public/user.svg";
+
 const Navbar = () => {
   return (
     <>
@@ -89,7 +92,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Get started</a>
+          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+            <div className="w-10 rounded-full">
+              <Image src={user} alt="" />
+            </div>
+          </label>
         </div>
       </div>
     </>
