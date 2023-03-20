@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Link from "next/link";
 
 const PageNotFound = () => {
   return (
     <>
+      <Head>
+        <title>404 || Page Not Found</title>
+        <meta name="description" content="Page Not Found" />
+      </Head>
       <main className="h-screen w-full flex flex-col justify-center items-center bg-[#1A2238]">
         <h1 className="text-9xl font-extrabold text-white tracking-widest">
           404
